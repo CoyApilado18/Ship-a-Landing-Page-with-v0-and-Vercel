@@ -1,10 +1,23 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Bangers, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 
+const bangers = Bangers({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-bangers',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'SONIC-1 | Heroic Sound for Builders',
+  description:
+    'A comic-book storefront for the SONIC-1 wireless headphones. Discover, customize, and check out on a single page.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -26,11 +39,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#e62429',
 }
 
 export default function RootLayout({
@@ -39,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={`${bangers.variable} ${spaceGrotesk.variable}`}>
+      <body className="bg-ink font-sans text-ink antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
