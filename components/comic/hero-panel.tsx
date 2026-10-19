@@ -9,8 +9,12 @@ type HeroPanelProps = {
 
 export function HeroPanel({ active, onExplore }: HeroPanelProps) {
   return (
-    <ComicPanel id="hero" issue="#1" caption="Meanwhile, in Startup City..." active={active} className="bg-hero-red text-white">
-      <div aria-hidden className="speed-lines pointer-events-none absolute inset-0" />
+    <ComicPanel id="hero" issue="#1" caption="Meanwhile, in Startup City..." active={active} className="bg-ink text-white">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-hero-red/60 via-ink/40 to-hero-blue/60"
+      />
+      <div aria-hidden className="speed-lines pointer-events-none absolute inset-0 opacity-40" />
       <div aria-hidden className="halftone-light pointer-events-none absolute inset-0" />
 
       <div className="relative z-10 flex min-h-0 flex-1 flex-col px-5 pt-12 pb-5">
@@ -18,7 +22,7 @@ export function HeroPanel({ active, onExplore }: HeroPanelProps) {
           Series A of awesome
         </p>
 
-        <h1 className="mt-3 font-display text-5xl leading-[0.9] tracking-wide text-hero-yellow [text-shadow:3px_3px_0_#111,-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111] xl:text-6xl">
+        <h1 className="mt-3 font-display text-5xl leading-[0.9] tracking-wide text-white [text-shadow:3px_3px_0_#111,-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111] xl:text-6xl">
           Welcome to My Store
         </h1>
 
