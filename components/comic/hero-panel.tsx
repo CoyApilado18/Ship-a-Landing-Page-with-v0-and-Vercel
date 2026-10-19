@@ -19,7 +19,7 @@ export function HeroPanel({ active, onExplore }: HeroPanelProps) {
         </p>
 
         <h1 className="mt-3 font-display text-5xl leading-[0.9] tracking-wide text-hero-yellow [text-shadow:3px_3px_0_#111,-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111] xl:text-6xl">
-          Sound that ships at warp speed!
+          Welcome to My Store
         </h1>
 
         <div className="relative mt-3 flex min-h-0 flex-1 items-center justify-center">
