@@ -6,6 +6,7 @@ import { product } from '@/lib/product'
 import { HeroPanel } from './hero-panel'
 import { ProductPanel } from './product-panel'
 import { CheckoutPanel } from './checkout-panel'
+import { TestimonialsStrip } from './testimonials-strip'
 
 const steps = [
   { id: 'hero', label: 'Origin' },
@@ -82,6 +83,8 @@ export function ComicStorefront() {
           />
         </div>
       </main>
+
+      <TestimonialsStrip />
     </div>
   )
 }
