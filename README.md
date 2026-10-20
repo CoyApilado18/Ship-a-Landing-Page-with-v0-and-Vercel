@@ -15,6 +15,13 @@
 
 In this project, I'm going to build a landing page without writing code from scratch: describe what I want in plain English and let v0.dev generate the code and depoy it to Vercel with one click.
 
+## What is Vercel and v0.dev  
+
+Vercel is a cloud platform for frontend developers that makes deploying websites and web applications incredibly fast and easy. It automatically connects to your code repository, builds your project, and provides a global network to host your site, handling scaling and performance automatically.  
+
+v0.dev is an AI-powered tool by Vercel that generates ready-to-use user interface components. You describe what you want in plain language, and it creates the code—typically using React and Tailwind CSS—which you can then copy, paste, and customize directly into your web projects.  
+
+
 ### Key tools and concepts
 
 The key tools I used include my Vercel as the main tool and this is the deployment environment, v0.dev where we generate code using React/Tailwind CSS and my GitHub account as my source code repo where code from v0 was exported from. Key concepts I learnt are how easy it is to deploy a website using these 3 tools by just prompting plain english as to what you want for your website.
